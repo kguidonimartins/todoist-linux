@@ -52,7 +52,7 @@ function handleRedirect(e, url) {
 }
 
 function createTray(win) {
-    tray = new Tray(path.join(__dirname, 'icons/icon.png'));
+    tray = new Tray(path.join(__dirname, 'icons/icon_tray.png'));
     const contextMenu = Menu.buildFromTemplate([
       {
         label: 'Show', click:  function() {
@@ -89,7 +89,7 @@ function createWindow () {
         width: mainWindowState.width,
         height: mainWindowState.height,
         title: 'Todoist',
-        icon: path.join(__dirname, 'icons/icon.png')
+        icon: path.join(__dirname, 'icons/icon_tray.png')
     });
 
     win.setMenu(null);
